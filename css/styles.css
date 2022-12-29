@@ -132,7 +132,7 @@ header nav .nav-menu .page {
   gap: 80px;
 }
 .nav-menu .item {
-  color: var(--primary-text-color);
+  color: var(--gray-2);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -156,7 +156,6 @@ header nav .nav-menu .page {
 
 .contacts .page:hover,
 .contacts .page:focus,
-.contacts .page.current,
 .nav-menu .item:hover,
 .nav-menu .item:focus {
   color: var(--accent-color);
