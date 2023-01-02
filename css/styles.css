@@ -166,7 +166,7 @@ header nav .nav-menu .page {
   background-color: var(--primary-black-color);
   padding: 200px var(--container-padding);
   text-align: center;
-  background-image: url(/images/img_banner.jpg);
+  background-image: url(./images/img_banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -193,8 +193,8 @@ header nav .nav-menu .page {
 
   background-color: var(--gray-1);
   border-radius: 15px;
-  height: 120px;
-  margin-bottom: 15px;
+  height: 130px;
+  margin-bottom: 30px;
   width: 270px;
 }
 .benefits .container .benefits-list li div .icon-benefit {
@@ -206,16 +206,21 @@ header nav .nav-menu .page {
   width: 270px;
 }
 .benefits .container .benefits-list li .title {
-  height: 50px;
+  font-size: 14px;
+  height: 30px;
   text-transform: uppercase;
   color: var(--primary-black-color);
 }
-
+.description {
+  height: 50px;
+  line-height: 25px;
+}
 
 
 /* ----------- What we do----------- */
 
 .what-we-do-section .container ul {
+ padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,7 +229,7 @@ header nav .nav-menu .page {
 .what-we-do-section .container ul li {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 15px;
     list-style-type: none;
     width: 360px;
 }
@@ -250,22 +255,27 @@ header nav .nav-menu .page {
   background-color: var(--primary-white-color);
   text-align: center;
   list-style: none;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.034),
+    0 5px 2px rgba(0, 0, 0, 0.048), 0 5px 2px rgba(0, 0, 0, 0.06),
+    0 5px 2px rgba(0, 0, 0, 0.072), 0 5px 2px rgba(0, 0, 0, 0.086),
+    0 1px 0.5px rgba(0, 0, 0, 0.12);
 }
 
 .team-section .container .team-cards li h3 {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 15px 0;
+  color:#000000
 }
 .team-section .container .team-cards li p {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+  color: #757575;
 }
 .team-section .container .team-cards li ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-
   padding: 10px 20px;
-  margin-bottom: 20px;
+  
 }
 .team-section .container .team-cards li li {
   display: block;
@@ -283,8 +293,8 @@ header nav .nav-menu .page {
   width: 35px;
 }
 .team-section .container .team-cards li a .icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   fill: var(--primary-text-color);
 }
 /* .team-section .container .team-cards li a:hover .icon {
@@ -401,12 +411,17 @@ header nav .nav-menu .page {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 .portfolio .menu li button:hover,
 .portfolio .menu li button.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
+.list-cards {
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+
+}
 .portfolio .cards{
   justify-content: space-between;
   flex-wrap: wrap;
@@ -422,15 +437,17 @@ header nav .nav-menu .page {
   color: var(--primary-black-color);
   padding: 15px;
 }
-.portfolio .cards li a p{
+.portfolio .cards li a p {
   color: var(--primary-text-color);
   font-size: 16px;
   padding: 15px;
+  
 }
+
 
 /*----------- footer section ----------- */
 footer {
-  padding: 94px var(--container-padding);
+  padding: 84px var(--container-padding);
   background-color: var(--background-black-2);
 }
 
@@ -453,7 +470,7 @@ footer .container address .contact {
   color: var(--gray-2);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.71;
   text-decoration: none;
   padding: 5px 0;
@@ -478,15 +495,17 @@ footer .container aside ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: var(--primary-white-10Perc);
   border-radius: 25px;
-  box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px;
   cursor: pointer;
   height: 44px;
   width: 44px;
 }
 
-footer .container aside ul li .icon {
+footer .container aside ul li .icon:hover{
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
