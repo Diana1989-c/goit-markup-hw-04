@@ -167,7 +167,7 @@ header nav .nav-menu .page {
   background-color: var(--primary-black-color);
   padding: 200px var(--container-padding);
   text-align: center;
-  background-image: url(../images/img_banner.jpg);
+  background-image: url('../images/img_banner.jpg');
   background-size: cover;
   background-position: center;
 }
