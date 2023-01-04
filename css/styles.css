@@ -223,20 +223,36 @@ header nav .nav-menu .page {
 /* ----------- What we do----------- */
 
 .what-we-do-section .container ul {
- padding-top: 10px;
+  width: 1170px;
   display: flex;
   align-items: center;
+  list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .what-we-do-section .container ul li {
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    list-style-type: none;
-    width: 360px;
+    position: relative;
+    width: 370px;
 }
 
+.info {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 78%;
+  text-align: center;
+  padding-top: 25px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.color-info {
+  
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+
+letter-spacing: 0.03em;
+color: var(--primary-white-color);
+}
 
 /*----------- Team section -----------*/
 .team-section {
@@ -254,6 +270,7 @@ header nav .nav-menu .page {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-end;
+  width: 1170px;
 }
 .team-section .container .team-cards li {
   background-color: var(--primary-white-color);
@@ -266,58 +283,39 @@ header nav .nav-menu .page {
 }
 
 .team-section .container .team-cards li h3 {
-  margin: 20px 0 15px 0;
+  margin: 30px 0 10px 0;
   color:#000000
 }
 .team-section .container .team-cards li p {
   margin-bottom: 8px;
   color: #757575;
+  margin-bottom: 16px;
 }
-.team-section .container .team-cards li ul {
+
+.containerall{
+  width: 206px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px 20px;
+  margin: 0 32px 30px 32px; 
+  gap: 10px;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
   
 }
-.team-section .container .team-cards li li {
-  display: block;
-  width: 35px;
-  height: 35px;
-  border-radius: 25px;
-}
-.team-section .container .team-cards li li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  border-radius: 25px;
-  height: 35px;
-  width: 35px;
-}
 .team-section .container .team-cards li a .icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  margin: 12px 12px 12px 12px;
   fill: var(--primary-text-color);
 }
-/* .team-section .container .team-cards li a:hover .icon {
-  
-} */
+
 .team-section .container .team-cards a:hover .icon {
   fill: var(--primary-white-color);
 }
 
-.containerall{
-  align-items: baseline;
-  display: inline-flex;
-}
-.social {
-  width: 35px;
-  height: 35px;
-  padding: 30px;
-  margin: 0;
-}
 
 .social:hover {
   border-radius: 50%;
@@ -361,8 +359,6 @@ header nav .nav-menu .page {
   list-style: none;
   margin-bottom: 90px;
   gap: 30px;
-  
- 
 }
 
 .customer .container-customer div {
@@ -437,6 +433,7 @@ header nav .nav-menu .page {
 }
 
 .portfolio .cards li {
+  display: flex;
   margin-bottom: 20px; 
   width: 360px;
   
